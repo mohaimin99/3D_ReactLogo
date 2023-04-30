@@ -9,7 +9,12 @@ export default function Scene({ ...props }) {
     <>
       <color attach="background" args={["#66617f"]} />
       <group {...props} dispose={null}>
-        <group name="Art" position={[3.97, 12.27, 16.64]} scale={1.03}>
+        <group
+          name="Art"
+          position={[3.97, 12.27, 16.64]}
+          rotation={[-0.24, 0, 0]}
+          scale={1.03}
+        >
           <mesh
             name="Sun"
             geometry={nodes.Sun.geometry}
@@ -78,18 +83,17 @@ export default function Scene({ ...props }) {
         <OrthographicCamera
           name="1"
           makeDefault={true}
-          zoom={3.26}
+          zoom={2.94}
           far={100000}
           near={-100000}
-          position={[987.96, 62.09, 77.7]}
-          rotation={[-0.69, 1.47, 0.69]}
+          position={[992.51, 35.33, 10.24]}
+          rotation={[-1.26, 1.53, 1.26]}
           key={undefined}
-          view={undefined}
-          quaternion={undefined}
-          onPointerMissed={undefined}
           attach={undefined}
           args={undefined}
           onUpdate={undefined}
+          view={undefined}
+          quaternion={undefined}
           up={undefined}
           scale={undefined}
           matrix={undefined}
@@ -105,6 +109,7 @@ export default function Scene({ ...props }) {
           onPointerEnter={undefined}
           onPointerLeave={undefined}
           onPointerMove={undefined}
+          onPointerMissed={undefined}
           onPointerCancel={undefined}
           onWheel={undefined}
           castShadow={undefined}
